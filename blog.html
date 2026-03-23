@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Blogue — L'Écrin des Anges · Chablais & Lac Léman</title>
+  <meta name="description" content="Découvrez nos articles sur le Chablais, le Lac Léman, les activités en Haute-Savoie et la vie à L'Écrin des Anges." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav scrolled" id="nav">
+    <a href="index.html" class="nav__logo">
+      <img src="https://ecrindesanges.com/wp-content/uploads/2025/05/logo-ecrin-des-anges-blanc.svg" alt="L'Écrin des Anges" class="nav__logo-img" />
+    </a>
+    <nav class="nav__links">
+      <a href="index.html#about">À propos</a>
+      <a href="index.html#hebergements">Hébergements</a>
+      <a href="index.html#experience">Expériences</a>
+      <a href="restaurant.html" class="nav__link--restaurant">La Table des Anges</a>
+      <a href="blog.html" class="nav__link--active">Blogue</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="nav__cta">Réserver</a>
+    <button class="nav__burger" aria-label="Menu" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about" class="mobile-menu__link">À propos</a>
+    <a href="index.html#hebergements" class="mobile-menu__link">Hébergements</a>
+    <a href="index.html#experience" class="mobile-menu__link">Expériences</a>
+    <a href="restaurant.html" class="mobile-menu__link" style="color:#DDBB3A">La Table des Anges</a>
+    <a href="blog.html" class="mobile-menu__link" style="color:#b8975a">Blogue</a>
+    <a href="index.html#contact" class="mobile-menu__link">Contact</a>
+    <a href="index.html#contact" class="mobile-menu__cta">Réserver</a>
+  </div>
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="blog-hero__bg"></div>
+    <div class="blog-hero__overlay"></div>
+    <div class="blog-hero__content">
+      <span class="hero__eyebrow reveal">Inspirations & découvertes</span>
+      <h1 class="hero__title reveal">Le<br /><em>Blogue</em></h1>
+      <p class="hero__tagline reveal">Chablais · Lac Léman · Art de vivre</p>
+    </div>
+  </section>
+
+  <!-- CATEGORIES FILTER -->
+  <section class="blog-filters">
+    <div class="blog-filters__inner">
+      <button class="blog-filter blog-filter--active" data-filter="all">Tout</button>
+      <button class="blog-filter" data-filter="region">La région</button>
+      <button class="blog-filter" data-filter="activites">Activités</button>
+      <button class="blog-filter" data-filter="gastronomie">Gastronomie</button>
+      <button class="blog-filter" data-filter="sejour">Conseils séjour</button>
+    </div>
+  </section>
+
+  <!-- ARTICLES GRID -->
+  <section class="blog-grid" id="articles">
+    <div class="blog-grid__inner">
+
+      <!-- Article 1 — featured -->
+      <article class="blog-card blog-card--featured reveal" data-category="region">
+        <a href="#" class="blog-card__img-link">
+          <div class="blog-card__img blog-card__img--lac"></div>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat">La région</span>
+            <time class="blog-card__date" datetime="2025-06-10">10 juin 2025</time>
+          </div>
+          <h2 class="blog-card__title">
+            <a href="#">Le Lac Léman : des rives de Thonon aux hauteurs du Chablais</a>
+          </h2>
+          <p class="blog-card__excerpt">
+            Entre les eaux cristallines du plus grand lac d'Europe occidentale et les sommets enneigés du Chablais, la région offre un panorama d'une beauté saisissante. Nous vous emmenons explorer les trésors cachés de ce territoire d'exception.
+          </p>
+          <a href="#" class="blog-card__link">
+            Lire l'article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="blog-card reveal" data-category="activites">
+        <a href="#" class="blog-card__img-link">
+          <div class="blog-card__img blog-card__img--rando"></div>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat">Activités</span>
+            <time class="blog-card__date" datetime="2025-05-22">22 mai 2025</time>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="#">5 randonnées incontournables autour de Vacheresse</a>
+          </h3>
+          <p class="blog-card__excerpt">
+            De la montée vers la Cornette de Bise aux sentiers longeant les alpages fleuris, découvrez nos cinq itinéraires favoris à faire depuis L'Écrin des Anges.
+          </p>
+          <a href="#" class="blog-card__link">
+            Lire l'article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="blog-card reveal" data-category="gastronomie">
+        <a href="#" class="blog-card__img-link">
+          <div class="blog-card__img blog-card__img--gastro"></div>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat">Gastronomie</span>
+            <time class="blog-card__date" datetime="2025-05-05">5 mai 2025</time>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="#">Saveurs savoyardes : les producteurs locaux que nous adorons</a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Fromages d'alpage, miel de montagne, vins du Chablais suisse… Nous partageons nos adresses gourmandes et les artisans passionnés qui font vivre ce territoire.
+          </p>
+          <a href="#" class="blog-card__link">
+            Lire l'article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="blog-card reveal" data-category="activites">
+        <a href="#" class="blog-card__img-link">
+          <div class="blog-card__img blog-card__img--ski"></div>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat">Activités</span>
+            <time class="blog-card__date" datetime="2025-01-15">15 janvier 2025</time>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="#">Guide ski 2025 : Avoriaz, Morzine et Les Gets depuis Vacheresse</a>
+          </h3>
+          <p class="blog-card__excerpt">
+            À moins d'une heure de route, les plus belles stations des Portes du Soleil s'offrent à vous. Notre guide pratique pour organiser votre journée ski depuis L'Écrin des Anges.
+          </p>
+          <a href="#" class="blog-card__link">
+            Lire l'article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="blog-card reveal" data-category="sejour">
+        <a href="#" class="blog-card__img-link">
+          <div class="blog-card__img blog-card__img--sejour"></div>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat">Conseils séjour</span>
+            <time class="blog-card__date" datetime="2025-03-10">10 mars 2025</time>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="#">Quelle saison pour visiter le Chablais ? Notre guide complet</a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Chaque saison offre une facette unique du Chablais. Neige en hiver, fleurs en printemps, baignades en été, couleurs en automne — voici nos conseils pour choisir la période idéale.
+          </p>
+          <a href="#" class="blog-card__link">
+            Lire l'article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="blog-card reveal" data-category="region">
+        <a href="#" class="blog-card__img-link">
+          <div class="blog-card__img blog-card__img--thonon"></div>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat">La région</span>
+            <time class="blog-card__date" datetime="2025-02-20">20 février 2025</time>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="#">Thonon-les-Bains : la perle du Léman à explorer en une journée</a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Promenades sur les quais, marché provençal, vieille ville et escapades en bateau — Thonon-les-Bains mérite bien plus qu'un simple passage. Notre itinéraire d'une journée.
+          </p>
+          <a href="#" class="blog-card__link">
+            Lire l'article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER CTA -->
+  <section class="blog-newsletter">
+    <div class="blog-newsletter__inner">
+      <div class="blog-newsletter__text">
+        <span class="section-eyebrow section-eyebrow--light reveal">Restez informés</span>
+        <h2 class="section-title section-title--light reveal">Ne manquez aucune<br /><em>histoire</em></h2>
+        <p class="blog-newsletter__body reveal">
+          Recevez nos derniers articles, nos bons plans et nos offres exclusives directement dans votre boîte mail.
+        </p>
+      </div>
+      <form class="blog-newsletter__form reveal" id="newsletterForm" novalidate>
+        <div class="blog-newsletter__field">
+          <input type="email" id="newsletter-email" name="email" placeholder="votre@email.fr" required />
+          <button type="submit" class="btn btn--primary">S'abonner</button>
+        </div>
+        <p class="blog-newsletter__notice">Pas de spam, désabonnement en un clic.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="https://ecrindesanges.com/wp-content/uploads/2025/05/logo-ecrin-des-anges-blanc.svg" alt="L'Écrin des Anges" class="footer__logo-img" />
+        <p>Hébergement de charme au bord du Lac Léman,<br />à Thonon-les-Bains, Haute-Savoie.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="index.html#about">À propos</a>
+        <a href="index.html#hebergements">Hébergements</a>
+        <a href="index.html#experience">Expériences</a>
+        <a href="blog.html">Blogue</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/profile.php?id=61577756400870" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/lecrindesanges_vacheresse" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 L'Écrin des Anges — Déborah &amp; Nicolas. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>
