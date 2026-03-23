@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Écrin des Anges — Hébergement de charme · Lac Léman</title>
+  <meta name="description" content="Hébergement de charme à Thonon-les-Bains, au bord du Lac Léman. Vivez des moments précieux avec Déborah & Nicolas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">L'Écrin des Anges</a>
+    <nav class="nav__links">
+      <a href="#about">À propos</a>
+      <a href="#hebergements">Hébergements</a>
+      <a href="#experience">Expériences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Réserver</a>
+    <button class="nav__burger" aria-label="Menu" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-menu__link">À propos</a>
+    <a href="#hebergements" class="mobile-menu__link">Hébergements</a>
+    <a href="#experience" class="mobile-menu__link">Expériences</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+    <a href="#contact" class="mobile-menu__cta">Réserver</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__eyebrow reveal">Thonon-les-Bains · Lac Léman</span>
+      <h1 class="hero__title reveal">
+        L'Écrin<br /><em>des Anges</em>
+      </h1>
+      <p class="hero__tagline reveal">Venez vivre des moments précieux</p>
+      <div class="hero__actions reveal">
+        <a href="#hebergements" class="btn btn--primary">Découvrir</a>
+        <a href="#contact" class="btn btn--outline">Réserver</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Défiler</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <section class="strip">
+    <div class="strip__item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 7v5l3 3"/></svg>
+      <span>Arrivée flexible</span>
+    </div>
+    <div class="strip__item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Maison entière</span>
+    </div>
+    <div class="strip__item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>
+      <span>Vue lac & montagne</span>
+    </div>
+    <div class="strip__item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <span>Accueil personnalisé</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__visual reveal">
+      <div class="about__img about__img--1"></div>
+      <div class="about__img about__img--2"></div>
+      <div class="about__badge">
+        <span class="about__badge-num">★</span>
+        <span class="about__badge-label">Charme &amp; authenticité</span>
+      </div>
+    </div>
+    <div class="about__text">
+      <span class="section-eyebrow reveal">Notre histoire</span>
+      <h2 class="section-title reveal">Un havre de paix<br /><em>pensé pour vous</em></h2>
+      <p class="about__body reveal">
+        Déborah &amp; Nicolas vous ouvrent les portes de leur refuge niché au cœur du
+        Chablais, à deux pas des eaux bleues du Lac Léman. Ici, tout est pensé pour
+        que vous posiez vos valises, souffliez, et redécouvriez la beauté du simple.
+      </p>
+      <p class="about__body reveal">
+        Que vous soyez en quête d'une escapade romantique, d'un séjour famille ou
+        d'un week-end nature ressourçant, L'Écrin des Anges s'adapte à vos envies et
+        vous offre un cadre d'exception.
+      </p>
+      <a href="#hebergements" class="btn btn--primary reveal">Voir les hébergements</a>
+    </div>
+  </section>
+
+  <!-- HEBERGEMENTS -->
+  <section class="heberg" id="hebergements">
+    <div class="heberg__header">
+      <span class="section-eyebrow reveal">Où dormir</span>
+      <h2 class="section-title reveal">Nos hébergements<br /><em>de charme</em></h2>
+    </div>
+    <div class="heberg__grid">
+
+      <article class="card reveal">
+        <div class="card__img card__img--1"></div>
+        <div class="card__body">
+          <span class="card__tag">Gîte</span>
+          <h3 class="card__title">Le Nid des Anges</h3>
+          <p class="card__desc">Un cocon chaleureux au calme total, idéal pour les couples en quête d'intimité face aux sommets alpins.</p>
+          <ul class="card__features">
+            <li>2 personnes</li>
+            <li>Terrasse privée</li>
+            <li>Linge inclus</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Demander disponibilité</a>
+        </div>
+      </article>
+
+      <article class="card card--featured reveal">
+        <div class="card__img card__img--2"></div>
+        <div class="card__badge-featured">Coup de cœur</div>
+        <div class="card__body">
+          <span class="card__tag">Maison</span>
+          <h3 class="card__title">La Maison des Anges</h3>
+          <p class="card__desc">Espace généreux pour les familles ou petits groupes. Jardin, vue imprenable et tous les conforts d'une vraie maison.</p>
+          <ul class="card__features">
+            <li>6 personnes</li>
+            <li>Jardin &amp; barbecue</li>
+            <li>2 salles de bain</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Réserver maintenant</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__img card__img--3"></div>
+        <div class="card__body">
+          <span class="card__tag">Suite</span>
+          <h3 class="card__title">La Suite Lac</h3>
+          <p class="card__desc">Vue panoramique sur le Lac Léman depuis votre lit. Un réveil de rêve dans un écrin de luxe discret.</p>
+          <ul class="card__features">
+            <li>2 personnes</li>
+            <li>Vue lac</li>
+            <li>Petit-déjeuner offert</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Demander disponibilité</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="xp" id="experience">
+    <div class="xp__bg"></div>
+    <div class="xp__inner">
+      <div class="xp__text">
+        <span class="section-eyebrow section-eyebrow--light reveal">Autour de vous</span>
+        <h2 class="section-title section-title--light reveal">Vivre le Chablais<br /><em>à fond</em></h2>
+        <p class="xp__body reveal">
+          Le Lac Léman à deux pas, les stations de ski en hiver, les sentiers de randonnée en été :
+          L'Écrin des Anges est votre point de chute idéal pour explorer cette région d'exception.
+        </p>
+      </div>
+      <div class="xp__list">
+        <div class="xp__item reveal">
+          <div class="xp__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <div>
+            <h4>Randonnées</h4>
+            <p>Sentiers GR et balades en forêt dès le seuil de la porte.</p>
+          </div>
+        </div>
+        <div class="xp__item reveal">
+          <div class="xp__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div>
+            <h4>Ski alpin</h4>
+            <p>Avoriaz, Morzine, Les Gets — moins d'une heure de route.</p>
+          </div>
+        </div>
+        <div class="xp__item reveal">
+          <div class="xp__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+          </div>
+          <div>
+            <h4>Lac Léman</h4>
+            <p>Baignades, kayak et promenades au bord de l'eau à Thonon.</p>
+          </div>
+        </div>
+        <div class="xp__item reveal">
+          <div class="xp__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <div>
+            <h4>Gastronomie</h4>
+            <p>Restaurants étoilés, marchés locaux et saveurs savoyardes authentiques.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi">
+    <span class="section-eyebrow reveal">Ils nous ont fait confiance</span>
+    <h2 class="section-title reveal">Ce qu'ils<br /><em>en disent</em></h2>
+    <div class="testi__track" id="testiTrack">
+      <div class="testi__card">
+        <div class="testi__stars">★★★★★</div>
+        <p>"Un endroit magique. Déborah et Nicolas sont des hôtes d'une gentillesse rare. Nous reviendrons sans aucun doute !"</p>
+        <span class="testi__author">— Sophie &amp; Marc, Paris</span>
+      </div>
+      <div class="testi__card">
+        <div class="testi__stars">★★★★★</div>
+        <p>"La vue sur le lac est époustouflante. Le logement est impeccable, chaleureux et exactement comme les photos. Parfait !"</p>
+        <span class="testi__author">— Famille Bertrand, Lyon</span>
+      </div>
+      <div class="testi__card">
+        <div class="testi__stars">★★★★★</div>
+        <p>"Week-end de rêve dans un cadre exceptionnel. Nous avons été conquis par le calme et la beauté de cet endroit."</p>
+        <span class="testi__author">— Camille, Genève</span>
+      </div>
+    </div>
+    <div class="testi__dots" id="testiDots">
+      <button class="testi__dot testi__dot--active" data-idx="0"></button>
+      <button class="testi__dot" data-idx="1"></button>
+      <button class="testi__dot" data-idx="2"></button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__info">
+      <span class="section-eyebrow reveal">Nous trouver</span>
+      <h2 class="section-title reveal">Réservez votre<br /><em>séjour</em></h2>
+      <p class="contact__body reveal">
+        Pour toute demande de réservation ou renseignement, contactez Déborah &amp; Nicolas
+        directement. Ils seront ravis de vous accueillir dans leur écrin.
+      </p>
+      <div class="contact__details reveal">
+        <div class="contact__detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Thonon-les-Bains, Haute-Savoie</span>
+        </div>
+        <div class="contact__detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>contact@ecrindesanges.com</span>
+        </div>
+        <div class="contact__social reveal">
+          <a href="https://www.facebook.com/profile.php?id=61577756400870" target="_blank" rel="noopener" class="contact__social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/lecrindesanges_vacheresse" target="_blank" rel="noopener" class="contact__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <form class="contact__form reveal" id="contactForm" novalidate>
+      <div class="form__row">
+        <div class="form__group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Marie" required />
+        </div>
+        <div class="form__group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Dupont" required />
+        </div>
+      </div>
+      <div class="form__group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="marie@exemple.fr" required />
+      </div>
+      <div class="form__row">
+        <div class="form__group">
+          <label for="arrivee">Arrivée</label>
+          <input type="date" id="arrivee" name="arrivee" required />
+        </div>
+        <div class="form__group">
+          <label for="depart">Départ</label>
+          <input type="date" id="depart" name="depart" required />
+        </div>
+      </div>
+      <div class="form__group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de votre séjour..."></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">L'Écrin des Anges</span>
+        <p>Hébergement de charme au bord du Lac Léman,<br />à Thonon-les-Bains, Haute-Savoie.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#about">À propos</a>
+        <a href="#hebergements">Hébergements</a>
+        <a href="#experience">Expériences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/profile.php?id=61577756400870" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/lecrindesanges_vacheresse" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 L'Écrin des Anges — Déborah &amp; Nicolas. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
