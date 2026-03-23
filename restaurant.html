@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Table des Anges — Restaurant de chalet · Vacheresse</title>
+  <meta name="description" content="La Table des Anges, le goût du partage. Restaurant chalet à Vacheresse, saveurs alpines et cuisine généreuse dans un cadre montagnard authentique." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="restaurant.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+      L'Écrin des Anges
+    </a>
+    <nav class="nav__links">
+      <a href="#concept">Le concept</a>
+      <a href="#menu">La carte</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#reservation">Réservation</a>
+    </nav>
+    <a href="#reservation" class="nav__cta">Réserver une table</a>
+    <button class="nav__burger" aria-label="Menu" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#concept" class="mobile-menu__link">Le concept</a>
+    <a href="#menu" class="mobile-menu__link">La carte</a>
+    <a href="#galerie" class="mobile-menu__link">Galerie</a>
+    <a href="#reservation" class="mobile-menu__link">Réservation</a>
+    <a href="#reservation" class="mobile-menu__cta">Réserver une table</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__logo-wrap reveal">
+        <!-- Logo silhouette inline SVG -->
+        <svg class="hero__icon" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Stars -->
+          <text x="72" y="12" font-size="8" fill="#DDBB3A">✦</text>
+          <text x="82" y="6" font-size="6" fill="#DDBB3A">✦</text>
+          <text x="90" y="14" font-size="5" fill="#DDBB3A">✦</text>
+          <!-- Arc -->
+          <path d="M30 55 Q50 20 80 30" stroke="#DDBB3A" stroke-width="1.5" fill="none"/>
+          <!-- Silhouette serveuse -->
+          <ellipse cx="60" cy="22" rx="7" ry="8" fill="#1a0a0a"/>
+          <path d="M53 30 Q48 38 46 50 Q55 54 60 53 Q65 54 74 50 Q72 38 67 30 Z" fill="#1a0a0a"/>
+          <path d="M46 50 Q40 52 38 60 L72 60 Q70 52 74 50" fill="#1a0a0a"/>
+          <!-- Bras gauche avec plateau -->
+          <path d="M53 35 Q44 32 38 30" stroke="#1a0a0a" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <ellipse cx="36" cy="29" rx="9" ry="3" fill="#1a0a0a"/>
+          <!-- Main droite sur hanche -->
+          <path d="M67 35 Q74 37 76 42" stroke="#1a0a0a" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <!-- Jupe -->
+          <path d="M46 60 Q44 72 43 82 L77 82 Q76 72 74 60 Z" fill="#1a0a0a"/>
+          <!-- Jambes -->
+          <rect x="50" y="82" width="8" height="14" rx="2" fill="#1a0a0a"/>
+          <rect x="62" y="82" width="8" height="14" rx="2" fill="#1a0a0a"/>
+        </svg>
+      </div>
+      <h1 class="hero__title reveal">La Table<br /><em>des Anges</em></h1>
+      <p class="hero__slogan reveal">"Le goût du partage"</p>
+      <div class="hero__meta reveal">
+        <span>Vacheresse · Haute-Savoie</span>
+        <span class="hero__sep">·</span>
+        <span>Cuisine alpine & savoyarde</span>
+        <span class="hero__sep">·</span>
+        <span>Ouvert midi & soir</span>
+      </div>
+      <a href="#reservation" class="btn btn--primary reveal">Réserver une table</a>
+    </div>
+    <div class="hero__scroll">
+      <span>Découvrir</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- CONCEPT -->
+  <section class="concept" id="concept">
+    <div class="concept__visual reveal">
+      <div class="concept__img concept__img--main"></div>
+      <div class="concept__img concept__img--accent"></div>
+      <div class="concept__tag reveal">
+        <span>★★★</span>
+        <span>Cuisine de montagne</span>
+      </div>
+    </div>
+    <div class="concept__text">
+      <span class="eyebrow reveal">Notre philosophie</span>
+      <h2 class="section-title reveal">La montagne<br /><em>dans votre assiette</em></h2>
+      <p class="concept__body reveal">
+        Nichée au cœur du Chablais, La Table des Anges est un restaurant de chalet où
+        la chaleur du bois, le feu de la cheminée et la générosité des assiettes se
+        conjuguent pour créer des moments inoubliables.
+      </p>
+      <p class="concept__body reveal">
+        Nous travaillons avec des producteurs locaux de Haute-Savoie pour vous offrir
+        une cuisine authentique, sincère et généreuse — raclette, fondue, tartiflette,
+        viandes de montagne et desserts maison — le tout dans une ambiance chaleureuse
+        et conviviale.
+      </p>
+      <div class="concept__values reveal">
+        <div class="concept__value">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Produits locaux</span>
+        </div>
+        <div class="concept__value">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          <span>Fait maison</span>
+        </div>
+        <div class="concept__value">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span>Esprit partage</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMBIANCE STRIP -->
+  <div class="ambiance">
+    <div class="ambiance__img ambiance__img--1"></div>
+    <div class="ambiance__img ambiance__img--2"></div>
+    <div class="ambiance__img ambiance__img--3"></div>
+    <div class="ambiance__img ambiance__img--4"></div>
+  </div>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="menu-section__header">
+      <span class="eyebrow reveal">Nos spécialités</span>
+      <h2 class="section-title reveal">La carte<br /><em>des saveurs</em></h2>
+      <p class="menu-section__intro reveal">Une cuisine de montagne généreuse, élaborée à partir de produits du terroir savoyard.</p>
+    </div>
+
+    <div class="menu-tabs reveal" id="menuTabs">
+      <button class="menu-tab menu-tab--active" data-tab="entrees">Entrées</button>
+      <button class="menu-tab" data-tab="plats">Plats</button>
+      <button class="menu-tab" data-tab="fromages">Fromages</button>
+      <button class="menu-tab" data-tab="desserts">Desserts</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <!-- ENTREES -->
+      <div class="menu-panel menu-panel--active" data-panel="entrees">
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Velouté de potimarron au lard fumé</h4>
+            <p>Crème fraîche locale, graines de courge grillées, lard des Alpes</p>
+          </div>
+          <span class="menu-item__price">12 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Salade de chèvre chaud et noix</h4>
+            <p>Chèvre fermier, noix de Grenoble, miel de montagne, mesclun local</p>
+          </div>
+          <span class="menu-item__price">11 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Assiette de charcuteries savoyardes</h4>
+            <p>Saucisson, longe fumée, diots, cornichons et pain de campagne</p>
+          </div>
+          <span class="menu-item__price">15 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Tarte fine aux poireaux et reblochon</h4>
+            <p>Reblochon fermier AOP, poireaux confits, crème d'ail</p>
+          </div>
+          <span class="menu-item__price">13 €</span>
+        </div>
+      </div>
+
+      <!-- PLATS -->
+      <div class="menu-panel" data-panel="plats">
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Fondue savoyarde traditionnelle</h4>
+            <p>Comté, Gruyère, Emmental — accompagnée de pain de campagne et charcuteries</p>
+          </div>
+          <span class="menu-item__price">28 € / pers.</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Raclette à la bougie</h4>
+            <p>Fromage à raclette artisanal, pommes de terre ratte, cornichons, charcuteries</p>
+          </div>
+          <span class="menu-item__price">26 € / pers.</span>
+        </div>
+        <div class="menu-item menu-item--featured reveal">
+          <div class="menu-item__badge">Signature</div>
+          <div class="menu-item__info">
+            <h4>Tartiflette des Anges</h4>
+            <p>Reblochon fermier AOP, pommes de terre, lardons fumés, crème, oignons caramélisés</p>
+          </div>
+          <span class="menu-item__price">22 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Côte de veau de montagne, jus réduit</h4>
+            <p>Veau élevé en Chablais, gratin dauphinois, légumes racines rôtis</p>
+          </div>
+          <span class="menu-item__price">32 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Diots au vin blanc et polenta crémeuse</h4>
+            <p>Saucisses savoyardes, vin blanc de Savoie, polenta au beurre et parmesan</p>
+          </div>
+          <span class="menu-item__price">21 €</span>
+        </div>
+      </div>
+
+      <!-- FROMAGES -->
+      <div class="menu-panel" data-panel="fromages">
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Plateau de fromages savoyards</h4>
+            <p>Sélection de 4 fromages : Beaufort, Abondance, Reblochon, Tomme — pain et confiture</p>
+          </div>
+          <span class="menu-item__price">16 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Beaufort d'alpage AOP</h4>
+            <p>Servi avec noix, raisins et pain au levain maison</p>
+          </div>
+          <span class="menu-item__price">9 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Reblochon fermier AOP chaud</h4>
+            <p>Chaud au four, miel de fleurs, noix et pain de seigle</p>
+          </div>
+          <span class="menu-item__price">10 €</span>
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="menu-panel" data-panel="desserts">
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Fondant au chocolat, caramel beurre salé</h4>
+            <p>Cœur coulant, glace vanille de Madagascar, fleur de sel</p>
+          </div>
+          <span class="menu-item__price">9 €</span>
+        </div>
+        <div class="menu-item menu-item--featured reveal">
+          <div class="menu-item__badge">Maison</div>
+          <div class="menu-item__info">
+            <h4>Tarte myrtilles sauvages des Alpes</h4>
+            <p>Myrtilles cueillies en altitude, crème pâtissière légère, pâte sablée maison</p>
+          </div>
+          <span class="menu-item__price">8 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Génépi crème brûlée</h4>
+            <p>Infusion de génépi des Alpes, sucre caramélisé à la minute</p>
+          </div>
+          <span class="menu-item__price">8 €</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item__info">
+            <h4>Meringues à la chartreuse verte</h4>
+            <p>Meringue croustillante, chantilly légère, coulis de framboise</p>
+          </div>
+          <span class="menu-item__price">7 €</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE CTA -->
+  <section class="cta-strip">
+    <div class="cta-strip__bg"></div>
+    <div class="cta-strip__inner">
+      <div class="cta-strip__text reveal">
+        <h3>Le forfait <em>Séjour & Table</em></h3>
+        <p>Combinez votre nuit à L'Écrin des Anges avec un dîner à La Table des Anges<br />et profitez d'une expérience montagnarde complète.</p>
+      </div>
+      <a href="index.html#contact" class="btn btn--crimson reveal">Découvrir le forfait</a>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="galerie" id="galerie">
+    <div class="galerie__header">
+      <span class="eyebrow reveal">L'atmosphère</span>
+      <h2 class="section-title reveal">Vivez l'ambiance<br /><em>du chalet</em></h2>
+    </div>
+    <div class="galerie__masonry">
+      <div class="galerie__item galerie__item--tall">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=85" alt="Restaurant chalet intérieur" loading="lazy" />
+      </div>
+      <div class="galerie__item">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=85" alt="Cheminée chalet" loading="lazy" />
+      </div>
+      <div class="galerie__item">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=85" alt="Viande grillée alpine" loading="lazy" />
+      </div>
+      <div class="galerie__item galerie__item--wide">
+        <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=1200&q=85" alt="Table dressée chalet" loading="lazy" />
+      </div>
+      <div class="galerie__item">
+        <img src="https://images.unsplash.com/photo-1482275548304-a58859dc31b7?w=800&q=85" alt="Fondue savoyarde" loading="lazy" />
+      </div>
+      <div class="galerie__item">
+        <img src="https://images.unsplash.com/photo-1559329007-97ade4f09b4c?w=800&q=85" alt="Vue montagne chalet" loading="lazy" />
+      </div>
+      <div class="galerie__item galerie__item--tall">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=85" alt="Restaurant gastronomique" loading="lazy" />
+      </div>
+      <div class="galerie__item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=85" alt="Plat montagnard" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- HORAIRES & INFOS -->
+  <section class="infos">
+    <div class="infos__card reveal">
+      <div class="infos__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <h3>Horaires</h3>
+      <ul>
+        <li><strong>Mardi – Dimanche</strong></li>
+        <li>Déjeuner : 12h00 – 14h30</li>
+        <li>Dîner : 19h00 – 22h00</li>
+        <li class="infos__closed">Lundi : fermé</li>
+      </ul>
+    </div>
+    <div class="infos__card reveal">
+      <div class="infos__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h3>Accès</h3>
+      <ul>
+        <li>Vacheresse, Haute-Savoie</li>
+        <li>Chablais · 74360</li>
+        <li>Parking gratuit sur place</li>
+        <li>Terrasse en saison estivale</li>
+      </ul>
+    </div>
+    <div class="infos__card reveal">
+      <div class="infos__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+      </div>
+      <h3>Réservations</h3>
+      <ul>
+        <li>Réservation conseillée</li>
+        <li>Groupes sur demande</li>
+        <li>Menus privatisation</li>
+        <li>Événements &amp; séminaires</li>
+      </ul>
+    </div>
+    <div class="infos__card reveal">
+      <div class="infos__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </div>
+      <h3>Nous suivre</h3>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=61577756400870" target="_blank" rel="noopener">Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/lecrindesanges_vacheresse" target="_blank" rel="noopener">Instagram</a>
+        </li>
+        <li>Partagez vos expériences</li>
+        <li>#LaTableDesAnges</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reservation" id="reservation">
+    <div class="reservation__bg"></div>
+    <div class="reservation__inner">
+      <div class="reservation__text">
+        <span class="eyebrow eyebrow--light reveal">Réservez votre table</span>
+        <h2 class="section-title section-title--light reveal">Une soirée<br /><em>inoubliable</em></h2>
+        <p class="reservation__body reveal">
+          Pour une soirée en amoureux, un repas de famille ou un dîner entre amis,
+          La Table des Anges vous réserve le meilleur accueil dans un cadre alpin authentique.
+        </p>
+        <div class="reservation__badges reveal">
+          <span>Cuisine 100% maison</span>
+          <span>Vins de Savoie</span>
+          <span>Terrasse en été</span>
+        </div>
+      </div>
+      <form class="reservation__form reveal" id="resvForm" novalidate>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="rPrenom">Prénom</label>
+            <input type="text" id="rPrenom" placeholder="Marie" required />
+          </div>
+          <div class="form__group">
+            <label for="rNom">Nom</label>
+            <input type="text" id="rNom" placeholder="Dupont" required />
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="rEmail">Email</label>
+          <input type="email" id="rEmail" placeholder="marie@exemple.fr" required />
+        </div>
+        <div class="form__group">
+          <label for="rTel">Téléphone</label>
+          <input type="tel" id="rTel" placeholder="+33 6 00 00 00 00" />
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="rDate">Date</label>
+            <input type="date" id="rDate" required />
+          </div>
+          <div class="form__group">
+            <label for="rService">Service</label>
+            <select id="rService">
+              <option value="">Choisir</option>
+              <option value="midi">Déjeuner (12h)</option>
+              <option value="soir">Dîner (19h)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="rCouverts">Nombre de couverts</label>
+          <select id="rCouverts">
+            <option value="1">1 personne</option>
+            <option value="2" selected>2 personnes</option>
+            <option value="3">3 personnes</option>
+            <option value="4">4 personnes</option>
+            <option value="5">5 personnes</option>
+            <option value="6+">6 personnes et plus</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="rMsg">Demande particulière</label>
+          <textarea id="rMsg" rows="3" placeholder="Allergie, anniversaire, chaise enfant..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--crimson btn--full">Confirmer ma réservation</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__logo-text">La Table des Anges</p>
+        <p class="footer__tagline">"Le goût du partage"</p>
+        <p class="footer__address">Vacheresse · Haute-Savoie · 74360</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#concept">Le concept</a>
+        <a href="#menu">La carte</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#reservation">Réservation</a>
+      </nav>
+      <div class="footer__ecrin">
+        <p class="footer__ecrin-label">Une expérience signée</p>
+        <a href="index.html">
+          <img src="https://ecrindesanges.com/wp-content/uploads/2025/05/logo-ecrin-des-anges-blanc.svg"
+               alt="L'Écrin des Anges" class="footer__ecrin-logo" />
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 La Table des Anges · L'Écrin des Anges — Déborah &amp; Nicolas. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="restaurant.js"></script>
+</body>
+</html>
